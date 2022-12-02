@@ -15,6 +15,10 @@ inputs:
     description: "Customize the name of the artifact" 
     required: false
     default: 'plan-${{ github.sha }}-${{ github.run_id }}-${{ github.run_number }}'
+  backend_cloud_credential_hostname:
+    description: "The hostname of the cloud backend provider"
+    required: false
+    default: "app.terraform.io"
   backend_cloud_credential_token:
     description: "If you're using terraform cloud as a backend, provide your credential here"
     required: false
