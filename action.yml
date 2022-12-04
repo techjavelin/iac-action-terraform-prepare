@@ -43,8 +43,8 @@ runs:
     - name: terraform // prepare // setup
       uses: hashicorp/setup-terraform@v2
       with:
-        terraform_cloud_credential_hostname: ${{ inputs.terraform-backend-credential-hostname }}
-        terraform_cloud_credential_token: ${{ inputs.terraform-backend-credential-token }}
+        cli_config_credentials_hostname: ${{ inputs.terraform-backend-credential-hostname }}
+        cli_config_credentials_token: ${{ inputs.terraform-backend-credential-token }}
 
     - name: terraform // prepare // init
       id: init
