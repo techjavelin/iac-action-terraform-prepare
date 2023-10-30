@@ -41,7 +41,7 @@ runs:
   using: composite
   steps:
     - name: terraform // prepare // setup
-      uses: hashicorp/setup-terraform@v2
+      uses: hashicorp/setup-terraform@v3
       with:
         cli_config_credentials_hostname: ${{ inputs.backend_cloud_credential_hostname }}
         cli_config_credentials_token: ${{ inputs.backend_cloud_credential_token }}
